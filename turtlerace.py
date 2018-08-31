@@ -55,16 +55,16 @@ for i in range(4):
     turtle[i].goto(-180,y)                          #Move turtle to an absolute position(-180,y)
     turtle[i].speed(4)                              #set speed of turtle 
     turtle[i].right(360)                            #rotate turtle by angle unit(360)
-    turtle[i].shape("turtle")                       #
-    turtle[i].shapesize(1, 1, 2)
+    turtle[i].shape("turtle")                       #used to change the cursor into 'turtle' shape
+    turtle[i].shapesize(1, 1, 2)                     #shapesize is used to change height ,width, outline of turtle
     turtle[i].color(col[i])
     turtle[i].pendown()
-    turtle[i].pen(pencolor=col[i])
-    turtle[i].write(col[i]+" turtle")
-    y=y+30
+    turtle[i].pen(pencolor=col[i])                     #set the 'turtle' of different color
+    turtle[i].write(col[i]+" turtle")          
+    y=y+30                                              #set the turtle at different position
     
-def winner(color):
-    penup()
+def winner(color):                                    #'winner' method is used  to show the winner turtle 
+    penup() 
     goto(50,-200)
     pendown()
     pencolor(color)
@@ -82,9 +82,9 @@ def winner(color):
     
     
  
-for i in range(200): 
-    turtle[0].forward(random.randint(1,5))
-    a,b=turtle[0].position()
+for i in range(200):                                      
+    turtle[0].forward(random.randint(1,5))                        #for forwarding the turtle randomly in range(1,5)
+    a,b=turtle[0].position()                                       # for getting the turtle x,y co-ordinate
     turtle[1].forward(random.randint(1,5))
     c,d=turtle[1].position()
     turtle[2].forward(random.randint(1,5))
