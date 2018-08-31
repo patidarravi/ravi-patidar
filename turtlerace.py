@@ -92,7 +92,7 @@ for i in range(200):
     turtle[3].forward(random.randint(1,5))
     g,h=turtle[3].position()
     if(a>=x-10):
-        winner(col[0])
+        winner(col[0])                                #winner method is called
         break
     elif(c>=x-10):
         winner(col[1])
@@ -103,4 +103,4 @@ for i in range(200):
     elif(g>=x-10):
         winner(col[3])
         break
-exitonclick()
+exitonclick()                            #click to exit
